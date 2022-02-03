@@ -39,11 +39,13 @@ public class BankExceptionCLI {
 		
 			// Receive choice
 			choice = scanner.next().charAt(0);
-		
+			
+			// Deposit
 			if (choice == '1') {
 				System.out.print("Okay, Deposit: How much do you want to deposit? $");
 				double amount = scanner.nextDouble();
 				account.deposit(amount);
+			// Withdraw
 			} else if (choice == '2') {
 				System.out.print("Okay, Withdraw: How much do you want to withdraw? $");
 				double amount = scanner.nextDouble();
@@ -52,6 +54,7 @@ public class BankExceptionCLI {
 				} catch (InsufficientBalanceException e) {
 					System.out.println(e + "\nUnable to process transaction...");
 				}
+			// Respond to choice other than '1', '2', or '3'
 			} else if (choice != '3'){
 				System.out.println("Choice unrecognized. Please enter 1, 2, or 0");
 			}
