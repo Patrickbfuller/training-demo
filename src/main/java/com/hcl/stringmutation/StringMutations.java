@@ -7,24 +7,23 @@ public class StringMutations {
 	
 	public static void main(String[] args) {
 		
-		String first, middle, last, color, date, fullName;
 		
 		Scanner scanner = new Scanner(System.in);
 		
 		System.out.println("Please enter first name:");
-		first = scanner.next();
+		String first = scanner.next();
 		System.out.println("Please enter middle name:");
-		middle = scanner.next();
+		String middle = scanner.next();
 		System.out.println("Please enter last name:");
-		last = scanner.next();
+		String last = scanner.next();
 		System.out.println("Please enter your favorite date: (dd/mm/yyyy)");
-		date = scanner.next();
+		String date = scanner.next();
 		System.out.println("Please enter favorite color:");
-		color = scanner.next();
+		String color = scanner.next();
 		
 		scanner.close();
 		
-		fullName = String.join("_", first, middle, last);
+		String fullName = String.join("_", first, middle, last);
 		
 		// Part 1
 		// f_m_l -> f:m:l
