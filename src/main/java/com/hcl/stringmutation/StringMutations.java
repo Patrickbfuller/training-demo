@@ -1,4 +1,4 @@
-package com.hcl.feb3;
+package com.hcl.stringmutation;
 
 import java.util.Scanner;
 import java.util.StringTokenizer;
