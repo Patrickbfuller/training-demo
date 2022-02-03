@@ -71,6 +71,7 @@ public class StringMutations {
 		
 		// Part 4
 		// f_m_l -> f m l d1 d2
+		sb2.append(" ");
 		sb2.append(color);
 		sb2.append(" ");
 		sb2.append(date);
