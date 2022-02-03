@@ -76,9 +76,6 @@ public class StringMutations {
 		sb2.append(" ");
 		sb2.append(date);
 		System.out.println("Full name with data: " + sb2.toString());
-		
-		
-		
-		
+
 	}
 }
