@@ -31,43 +31,62 @@ public class Demo {
 		patients.add(new Patient(35, "Winston", 60));
 		patients.add(new Patient(20, "Caesar", 80));
 		patients.add(new Patient(25, "Margaret", 70));
-		
-		System.out.println("Starting list of doctors: \n" + doctors);
-		
-		Collections.sort(doctors);
-		System.out.println("Sorted by id: \n" + doctors);
-		
-		Collections.sort(doctors, new DoctorNameComparator());
-		System.out.println("Sorted by name: \n" + doctors);
-		
-		Collections.sort(doctors, new DoctorSpecialtyComparator());
-		System.out.println("Sorted by specialty: \n" + doctors);
-		
-		
-		System.out.println("Starting list of patients: \n" + patients);
-		
-		Collections.sort(patients);
-		System.out.println("Sorted by id: \n" + patients);
-		
-		Collections.sort(patients, new PatientNameComparator());
-		System.out.println("Sorted by name: \n" + patients);
-		
-		Collections.sort(patients, new PatientAgeComparator());
-		System.out.println("Sorted by age: \n" + patients);
-		
-		System.out.println("Also implemented with anonymous comparators");
-		
-		Collections.sort(patients, Patient::compareTo);
-		System.out.println("Sorted by id: \n" + patients);
-		
-		Collections.sort(patients, Comparator.comparing(Patient::getName));
-		System.out.println("Sorted by name: \n" + patients);
-		
-		Collections.sort(patients, (p1, p2) -> p1.getAge() - p2.getAge());
-		System.out.println("Sorted by age: \n" + patients);
-		
-		
 
+		// Sorting Doctors
+		System.out.println("Starting list of doctors:");
+		displayElements(doctors);
+
+		Collections.sort(doctors);
+		System.out.println("Sorted by id:");
+		displayElements(doctors);
+
+		Collections.sort(doctors, new DoctorNameComparator());
+		System.out.println("Sorted by name:");
+		displayElements(doctors);
+
+		Collections.sort(doctors, new DoctorSpecialtyComparator());
+		System.out.println("Sorted by specialty:");
+		displayElements(doctors);
+
+		// Sorting Patients
+		System.out.println("Starting list of patients:");
+		displayElements(patients);
+
+		Collections.sort(patients);
+		System.out.println("Sorted by id:");
+		displayElements(patients);
+
+		Collections.sort(patients, new PatientNameComparator());
+		System.out.println("Sorted by name:");
+		displayElements(patients);
+
+		Collections.sort(patients, new PatientAgeComparator());
+		System.out.println("Sorted by age:");
+		displayElements(patients);
+
+		// Functional Programming
+		System.out.println("Also implemented with anonymous comparators");
+
+		Collections.sort(patients, Patient::compareTo);
+		System.out.println("Sorted by id:");
+		displayElements(patients);
+
+		Collections.sort(patients, Comparator.comparing(Patient::getName));
+		System.out.println("Sorted by name:");
+		displayElements(patients);
+
+		Collections.sort(patients, (p1, p2) -> p1.getAge() - p2.getAge());
+		System.out.println("Sorted by age:");
+		displayElements(patients);
+
+	}
+	
+	public static void displayElements(List<? extends Object> c) {
+		
+		for (Object object : c) {
+			System.out.println("\t" + object);
+		}
+		
 	}
 
 }
