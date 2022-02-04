@@ -1,6 +1,6 @@
-package com.hcl.stringdemo.entity;
+package com.hcl.demo.m02.d03.stringdemo.entity;
 
-import com.hcl.stringdemo.exception.LongNameException;
+import com.hcl.demo.m02.d03.stringdemo.exception.LongNameException;
 
 public class FullName {
 	

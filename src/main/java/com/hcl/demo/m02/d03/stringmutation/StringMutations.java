@@ -1,4 +1,4 @@
-package com.hcl.stringmutation;
+package com.hcl.demo.m02.d03.stringmutation;
 
 import java.util.Scanner;
 import java.util.StringTokenizer;

@@ -1,6 +1,6 @@
-package com.hcl.exceptiondemo.entity;
+package com.hcl.demo.m02.d02.exceptiondemo.entity;
 
-import com.hcl.exceptiondemo.exception.InsufficientBalanceException;
+import com.hcl.demo.m02.d02.exceptiondemo.exception.InsufficientBalanceException;
 
 public class Account {
 	

@@ -1,10 +1,10 @@
-package com.hcl.stringdemo;
+package com.hcl.demo.m02.d03.stringdemo;
 
 import java.util.Scanner;
 
-import com.hcl.exceptiondemo.exception.InsufficientBalanceException;
-import com.hcl.stringdemo.entity.FullName;
-import com.hcl.stringdemo.exception.LongNameException;
+import com.hcl.demo.m02.d02.exceptiondemo.exception.InsufficientBalanceException;
+import com.hcl.demo.m02.d03.stringdemo.entity.FullName;
+import com.hcl.demo.m02.d03.stringdemo.exception.LongNameException;
 
 public class StringCLI {
 

@@ -1,4 +1,4 @@
-package com.hcl.stringdemo.exception;
+package com.hcl.demo.m02.d03.stringdemo.exception;
 
 public class LongNameException extends Exception {
 	

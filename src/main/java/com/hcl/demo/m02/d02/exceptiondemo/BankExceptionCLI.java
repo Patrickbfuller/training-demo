@@ -1,9 +1,9 @@
-package com.hcl.exceptiondemo;
+package com.hcl.demo.m02.d02.exceptiondemo;
 
 import java.util.Scanner;
 
-import com.hcl.exceptiondemo.entity.Account;
-import com.hcl.exceptiondemo.exception.InsufficientBalanceException;
+import com.hcl.demo.m02.d02.exceptiondemo.entity.Account;
+import com.hcl.demo.m02.d02.exceptiondemo.exception.InsufficientBalanceException;
 
 /*
  * Write a Java program to handle exception handling mechanism through user-oriented exception handling

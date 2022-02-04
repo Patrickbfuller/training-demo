@@ -1,4 +1,4 @@
-package com.hcl.exceptiondemo.exception;
+package com.hcl.demo.m02.d02.exceptiondemo.exception;
 
 public class InsufficientBalanceException extends Exception {
 	
