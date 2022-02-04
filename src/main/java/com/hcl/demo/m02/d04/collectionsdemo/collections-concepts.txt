@@ -1,0 +1,19 @@
+ArrayList:
+	ArrayList is useful when:
+	- Order needs to maintained
+	- Access to any index needs to be fast
+	- Newly added elements are mainly added to the end of the array list
+	- Newly added elements are rarely inserted to an existing index
+
+Map:
+	Map is useful when:	
+	- Data is stored in Key & Value pairs
+	- Keys are unique
+	- Access to keys and their needs to be fast
+		
+Set:
+	Set is useful when:
+	- Elements are unique
+	- Elements are unorded
+	- Need to know quickly if element is in set or not
+		
