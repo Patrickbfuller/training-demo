@@ -1,0 +1,17 @@
+1.For the given below main concepts
+    Lambda expressions,
+    Method references,
+    Functional interfaces,
+    Stream API,Parallel Stream,
+    Default methods,
+    Static methods in interface,
+    Optional class,
+    Collectors class,
+    ForEach() method,
+    Predicate
+    BiFunction examples
+
+you have to go through(self-study)  of all the concepts also to implement at least 1 program for each concept.
+
+2.Implement a Java program with Stream API and without the Stream API,
+consider filter condition as for example you had employee list filter the employee records whose salary >1000 $ ,Name Startes with B & D and age > 30 .
